@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <style>
+      .center {
+        display: grid;
+        place-items: center;
+      }
+      body {
+        background: linear-gradient(270deg, #ff00a7, #ff0000, #9d0059);
+        background-size: 600% 600%;
+        -webkit-animation: gradien 30s ease infinite;
+        -moz-animation: gradien 30s ease infinite;
+        -o-animation: gradien 30s ease infinite;
+        animation: gradien 30s ease infinite;
+        font-family: sans-serif;
+      }
+      h3 {
+        color: #fff;
+      }
+      input,
+      button {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+      }
+      button {
+        margin-left: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h3>Add your To Do List here</h3>
+      <form id="myForm">
+        <input id="myInput" type="text" /><button>Add</button>
+      </form>
+      <h3>To Do List</h3>
+      <ul id="myItem"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
